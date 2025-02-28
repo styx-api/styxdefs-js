@@ -53,8 +53,8 @@ export class DryRunner implements Runner, Execution {
    */
   inputFile(
     hostFile: InputPathType,
-    resolveParent: boolean = false,
-    mutable: boolean = false
+    resolveParent: boolean = false, // eslint-disable-line @typescript-eslint/no-unused-vars
+    mutable: boolean = false // eslint-disable-line @typescript-eslint/no-unused-vars
   ): string {
     return hostFile.toString();
   }
@@ -66,7 +66,10 @@ export class DryRunner implements Runner, Execution {
    * @param optional - If true, the output file is optional.
    * @returns The output file path.
    */
-  outputFile(localFile: string, optional: boolean = false): OutputPathType {
+  outputFile(
+    localFile: string,
+    optional: boolean = false // eslint-disable-line @typescript-eslint/no-unused-vars
+  ): OutputPathType {
     return localFile;
   }
 
@@ -90,8 +93,8 @@ export class DryRunner implements Runner, Execution {
    */
   run(
     cargs: string[],
-    _handleStdout: ((output: string) => void) | null = null,
-    _handleStderr: ((output: string) => void) | null = null
+    handleStdout: ((output: string) => void) | null = null, // eslint-disable-line @typescript-eslint/no-unused-vars
+    handleStderr: ((output: string) => void) | null = null // eslint-disable-line @typescript-eslint/no-unused-vars
   ): void {
     this.lastCargs = cargs;
   }
