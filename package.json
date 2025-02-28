@@ -1,7 +1,7 @@
 {
-  "name": "my-ts-lib",
+  "name": "styxdefs",
   "version": "0.1.0",
-  "description": "A modern TypeScript library",
+  "description": "Styx definitions and minimal runtime",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/types/index.d.ts",
