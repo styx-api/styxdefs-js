@@ -181,3 +181,23 @@ export class StyxRuntimeError extends Error {
     Object.setPrototypeOf(this, StyxRuntimeError.prototype);
   }
 }
+
+/**
+ * Styx validation error.
+ *
+ * Raised when input parameter validation fails.
+ */
+export class StyxValidationError extends Error {
+  /**
+   * Initialize the error.
+   *
+   * @param message - The validation error message.
+   */
+  constructor(message: string) {
+    super(message);
+
+    this.name = 'StyxValidationError';
+
+    Object.setPrototypeOf(this, StyxValidationError.prototype);
+  }
+}
